@@ -28,8 +28,32 @@ header{
 .change-plan{
     display: flex;
     padding-top: 40px;
+    width: 100%;
+    justify-content: space-between;
 }
 
+button.toggle{
+    width: 56px;
+    height: 32px;
+    background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+    border-radius: 16px;
+    border: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.switch{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    z-index: 2;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.switch-monthly{
+    left: 50%;
+}
 
 h1, h2, p, button {
     font-family: 'Montserrat', sans-serif;
@@ -173,6 +197,3 @@ h1{
     border: 0;
     margin-bottom: 31px;
 }
-
-
-

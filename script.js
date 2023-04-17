@@ -1,6 +1,6 @@
 window.addEventListener('load', e => {
 
-  	const price = {
+    const price = {
 		monthly: {
 			basic: 19.99,
 			professional: 24.99,
@@ -25,16 +25,18 @@ window.addEventListener('load', e => {
         masterPlanHTMLElement.innerText = `$${prices.master}`;
     }
 
-    const planSelectorButton = document.querySelector('.toggle')
+    const planSelectorButton = document.querySelector('.toggle');
+    const switchPlanSelector = document.querySelector('.switch');
     
     planSelectorButton.addEventListener('click', e =>{
 
-        planSelectorButton.classList.toggle('monthly')
+        planSelectorButton.classList.toggle('monthly');
+        switchPlanSelector.classList.toggle('switch-monthly');
 
         if (!planSelectorButton.classList.contains('monthly')){
-            renderPrices(price.monthly);
-        } else {
             renderPrices(price.yearly);
+        } else {
+            renderPrices(price.monthly);
         }
     })
 })

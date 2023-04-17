@@ -1,12 +1,17 @@
 window.addEventListener('load', e => {
 
-    const monthlyPriceBasic = 19.99;
-    const monthlyPriceProfessional = 24.99;
-    const monthlyPriceMaster = 39.99;
-
-    const yearlyPriceBasic = 199.99;
-    const yearlyPriceProfessional = 249.99;
-    const yearlyPriceMaster = 399.99;
+  	const price = {
+		monthly: {
+			basic: 19.99,
+			professional: 24.99,
+			master: 39.99
+		},
+		yearly: {
+			basic: 199.99,
+			professional: 249.99,
+			master: 399.99
+		}
+	}
     
     const planPriceBasic = document.querySelector('.basic-content .plan-price');
     const planPriceProfessional = document.querySelector('.professional-content .plan-price');

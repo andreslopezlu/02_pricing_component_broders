@@ -17,18 +17,12 @@ window.addEventListener('load', e => {
     const proPlanHTMLElement = document.querySelector('.professional-content .plan-price');
     const masterPlanHTMLElement = document.querySelector('.master-content .plan-price');
 
-    renderMonthlyPrice();
+    renderPrices(price.monthly);
 
-    function renderMonthlyPrice () {
-        planPriceBasic.innerText=`$${monthlyPriceBasic}`;
-        planPriceProfessional.innerText = `$${monthlyPriceProfessional}`;
-        planPriceMaster.innerText = `$${monthlyPriceMaster}`;
-    }
-    
-    function renderYearlyPrice () {
-        planPriceBasic.innerText=`$${yearlyPriceBasic}`;
-        planPriceProfessional.innerText = `$${yearlyPriceProfessional}`;
-        planPriceMaster.innerText = `$${yearlyPriceProfessional}`;
+    function renderPrices (prices) {
+        basicPlanHTMLElement.innerText=`$${prices.basic}`;
+        proPlanHTMLElement.innerText = `$${prices.professional}`;
+        masterPlanHTMLElement.innerText = `$${prices.master}`;
     }
 
     const planSelectorButton = document.querySelector('.toggle')

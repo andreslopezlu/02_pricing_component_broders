@@ -13,9 +13,9 @@ window.addEventListener('load', e => {
 		}
 	}
     
-    const planPriceBasic = document.querySelector('.basic-content .plan-price');
-    const planPriceProfessional = document.querySelector('.professional-content .plan-price');
-    const planPriceMaster = document.querySelector('.master-content .plan-price');
+    const basicPlanHTMLElement = document.querySelector('.basic-content .plan-price');
+    const proPlanHTMLElement = document.querySelector('.professional-content .plan-price');
+    const masterPlanHTMLElement = document.querySelector('.master-content .plan-price');
 
     renderMonthlyPrice();
 

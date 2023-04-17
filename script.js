@@ -32,9 +32,9 @@ window.addEventListener('load', e => {
         planSelectorButton.classList.toggle('monthly')
 
         if (!planSelectorButton.classList.contains('monthly')){
-            renderYearlyPrice();
+            renderPrices(price.monthly);
         } else {
-            renderMonthlyPrice();
+            renderPrices(price.yearly);
         }
     })
 })

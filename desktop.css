@@ -1,0 +1,44 @@
+@media (min-width: 1000px) and (max-width: 1440px){
+    .main-container{
+        min-width: 900px;
+        max-width: 1440px;
+        background-image: url('assets/bg-top.svg'), url('assets/bg-bottom.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: 110% 0%, 0% 100%;
+    }   
+
+    header{
+        width: 239px;
+        height: 111;
+    }
+
+    .plans{
+        flex-direction: row;
+        width: 73%;;
+    }
+
+    .basic, .professional, .master{
+        width: 33.33%;
+    }
+
+    .professional, .master {
+        margin-top: 0;
+    }
+
+    .professional{
+        height: 501px;
+    }
+
+    .basic-content, .professional-content, .master-content {
+        width: 82%;
+    }
+
+    .basic-button, .professional-button, .master-button, a{
+        width: 100%;
+    }
+
+    .professional-content{
+        padding-top: 55px;
+    }
+
+}

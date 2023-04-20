@@ -41,4 +41,20 @@
         padding-top: 55px;
     }
 
+    button.toggle:hover{
+        background: linear-gradient(-45deg, #A2A7F0 0%, hsl(234, 14%, 74%) 100%);
+    }
+
+    .professional-button:hover{
+        background: none;
+        color:  #FFFFFF;
+        border: 1px solid #FFFFFF;
+    }
+
+    .basic-button:hover, .master-button:hover {
+        background: none;
+        color:  hsl(237, 63%, 64%);
+        border: 1px solid hsl(237, 63%, 64%);
+    }
+
 }

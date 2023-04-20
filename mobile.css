@@ -11,8 +11,7 @@ html{
     min-height: 100vh;
     background-image: url('assets/bg-top.svg');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: 190px -45px;
 }
 
 header{
